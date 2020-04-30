@@ -25,6 +25,7 @@ echo $message;
     if (@mail($to, $email, $message, $headers))
     {
         echo 'The message has been sent.';
+        header("Location: http://magentacreate.php"); 
     }else{
         echo 'failed';
     }
